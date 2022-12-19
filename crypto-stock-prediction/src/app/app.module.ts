@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -10,8 +14,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
-    BrowserModule
-  ],
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: 'home', component: DashboardComponent },
+      { path: 'settings', component: SettingsComponent },
+      {path:'shop', component: ShopComponent}
+  ])],
   providers: [],
   bootstrap: [AppComponent]
 })
