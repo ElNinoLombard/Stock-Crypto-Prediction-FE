@@ -3,7 +3,7 @@
 
 .navbar-wrapper {
   display: flex;
-  background-color: $tertiary-color;
+  background-color: $black;
   align-items: center;
   height: 65px;
 }
@@ -32,7 +32,7 @@
   align-items: flex-end;
   padding: 2em;
   span {
-    background-color: $secondary-color;
+    background-color: $white;
     width: 32px;
     height: 3px;
     border-radius: 2px;
@@ -56,7 +56,7 @@
     top: 4em;
     height: 100%;
     width: fit-content;
-    background-color: $tertiary-color;
+    background-color: $black;
   }
 }
 
@@ -90,12 +90,12 @@
 }
 
 a {
-  color: $secondary-color;
+  color: $white;
   padding: 2em;
   transition: 0.3s ease-in-out;
 
   &:hover, &.link-active {
-    color: $primary-color;
+    color: $light-blue;
     transition: 0.3s ease-in-out;
   }
 }

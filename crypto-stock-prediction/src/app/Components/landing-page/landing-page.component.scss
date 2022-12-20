@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+.landing-page-wrapper {
+  margin-top: 2em;
+}
+
+.landing-page-container {
+  display: flex;
+  margin: 0 3em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 265px;
+    height: 90px;
+  }
+}
+

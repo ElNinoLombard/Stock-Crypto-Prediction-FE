@@ -13,11 +13,14 @@ import { LandingPageComponent } from './Components/landing-page/landing-page.com
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    SettingsComponent,
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
+      { path: '', component: LandingPageComponent },
       { path: 'home', component: DashboardComponent },
       { path: 'settings', component: SettingsComponent },
       { path:'shop', component: ShopComponent }
