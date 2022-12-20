@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { SettingsComponent } from './settings/settings.component';
-import { ShopComponent } from './shop/shop.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { SettingsComponent } from './Components/settings/settings.component';
+import { ShopComponent } from './Components/shop/shop.component';
+import { LandingPageComponent } from './Components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     RouterModule.forRoot([
       { path: 'home', component: DashboardComponent },
       { path: 'settings', component: SettingsComponent },
-      {path:'shop', component: ShopComponent}
+      { path:'shop', component: ShopComponent }
   ])],
   providers: [],
   bootstrap: [AppComponent]
