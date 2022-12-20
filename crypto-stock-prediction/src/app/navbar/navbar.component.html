@@ -1,1 +1,30 @@
-<p>navbar works!</p>
+<div class="navbar-wrapper">
+  <div class="logo-container">
+    <img
+      class="logo"
+      src="../../assets/images/wallet-buddy-logo.png"
+      alt="Logo"
+    />
+  </div>
+
+  <div
+    class="navbar-icon"
+    [class.navbar-icon-animation]="iconVariable"
+    (click)="openMenu()"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="navbar-container">
+    <div class="navbar-items" [class.navbar-open]="navbarVariable">
+      <a
+        *ngFor="let navItem of navItems"
+        [routerLink]="navItem.pathLink"
+        routerLinkActive="link-active"
+        >{{ navItem.nameLink }}</a
+      >
+    </div>
+  </div>
+</div>

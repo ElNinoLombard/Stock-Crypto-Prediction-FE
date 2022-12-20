@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* ---- GENERAL ----*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat,
+    Poppins,
+    Arial,
+    Helvetica,
+    sans-serif;
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---- COLORS ---- */
+
+$primary-color: #5EACD4;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
