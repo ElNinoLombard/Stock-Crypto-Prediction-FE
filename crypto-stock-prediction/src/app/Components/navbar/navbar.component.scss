@@ -1,5 +1,5 @@
-@import '../../../styles.scss';
-@import '~bootstrap/scss/bootstrap-grid';
+@import "../../../styles.scss";
+@import "~bootstrap/scss/bootstrap-grid";
 
 .navbar-wrapper {
   display: flex;
@@ -37,7 +37,7 @@
     height: 3px;
     border-radius: 2px;
     transition: 0.2s ease-in-out;
-    &:nth-child(2){
+    &:nth-child(2) {
       margin: 5px 0;
     }
   }
@@ -53,7 +53,7 @@
   @include media-breakpoint-down(md) {
     position: fixed;
     right: 0;
-    top: 4em;
+    top: 3em;
     height: 100%;
     width: fit-content;
     background-color: $black;
@@ -94,7 +94,8 @@ a {
   padding: 2em;
   transition: 0.3s ease-in-out;
 
-  &:hover, &.link-active {
+  &:hover,
+  &.link-active {
     color: $light-blue;
     transition: 0.3s ease-in-out;
   }

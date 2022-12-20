@@ -7,5 +7,28 @@
       FOR A BRIGHT <br />
       FUTURE
     </h1>
+
+    <div class="section-intro">
+      <p>
+        Wallet Buddy is an AI that will help you buy and sell your coins at the
+        best possible moments. With you, Wallet Buddy will learn more each day
+        to give you the most accurate results. Sign up today!
+      </p>
+    </div>
+
+    <div class="section-table">
+      <div
+        class="table-data"
+        *ngFor="let tableData of tableContent"
+        [ngClass]="tableData.className"
+      >
+        {{ tableData.content }}
+      </div>
+    </div>
+
+    <div class="log-in-btn-container">
+      <button class="log-in-btn">LOG IN</button>
+      <a>or sign up</a>
+    </div>
   </div>
 </div>

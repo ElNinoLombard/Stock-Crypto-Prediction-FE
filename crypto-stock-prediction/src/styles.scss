@@ -1,4 +1,4 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 /* ---- GENERAL ----*/
 
@@ -6,11 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Montserrat,
-    Poppins,
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family: "Montserrat";
   scroll-behavior: smooth;
   word-wrap: break-word;
 }
@@ -22,7 +18,9 @@ a {
 
 /* ---- COLORS ---- */
 
-$light-blue: #5EACD4;
+$light-blue: #5eacd4;
+$light-blue-transparent: rgba(94, 173, 212, 0.1);
 $dark-blue: #08366a;
+$greyscale100: #e6e6e6;
 $white: #ffffff;
 $black: #000000;
