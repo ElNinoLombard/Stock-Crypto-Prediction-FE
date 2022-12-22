@@ -137,6 +137,14 @@
   a {
     font-size: 12px;
     text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: $light-blue;
+      transition: 0.2s ease-in-out;
+    }
+
   }
 
   @include media-breakpoint-up(md) {
@@ -158,6 +166,13 @@
   font-size: 12px;
   font-weight: bold;
   margin-top: 1em;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: $light-blue;
+    border: 2px solid $light-blue;
+    transition: 0.2s ease-in-out;
+  }
 
   @include media-breakpoint-up(md) {
     font-size: 18px;
