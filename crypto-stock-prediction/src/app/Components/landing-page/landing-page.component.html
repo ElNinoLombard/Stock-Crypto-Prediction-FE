@@ -1,12 +1,14 @@
 <div class="landing-page-wrapper">
   <div class="landing-page-container">
-    <div class="section-hero">
-      <img src="../../../assets/images/wallet-buddy-logo.png" alt="Logo" />
+    <div class="header-section">
+      <div class="section-hero">
+        <img src="../../../assets/images/wallet-buddy-logo.png" alt="Logo" />
+      </div>
+      <h1 class="slogan">
+        FOR A BRIGHT <br />
+        FUTURE
+      </h1>
     </div>
-    <h1 class="slogan">
-      FOR A BRIGHT <br />
-      FUTURE
-    </h1>
 
     <div class="section-intro">
       <p>
@@ -15,20 +17,21 @@
         to give you the most accurate results. Sign up today!
       </p>
     </div>
-
-    <div class="section-table">
-      <div
-        class="table-data"
-        *ngFor="let tableData of tableContent"
-        [ngClass]="tableData.className"
-      >
-        {{ tableData.content }}
+    <div class="main-content-container">
+      <div class="section-table">
+        <div
+          class="table-data"
+          *ngFor="let tableData of tableContent"
+          [ngClass]="tableData.className"
+        >
+          {{ tableData.content }}
+        </div>
       </div>
-    </div>
 
-    <div class="log-in-btn-container">
-      <button class="log-in-btn">LOG IN</button>
-      <a>or sign up</a>
+      <div class="log-in-btn-container">
+        <button class="log-in-btn">LOG IN</button>
+        <a>or sign up</a>
+      </div>
     </div>
   </div>
 </div>

@@ -1,9 +1,14 @@
 @import "../../../styles.scss";
+@import "~bootstrap/scss/bootstrap-grid";
 
 .landing-page-wrapper {
   background-image: url("../../../assets/images/background-img-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include media-breakpoint-up(md) {
+    background-image: url("../../../assets/images/landing-page-bg.png");
+  }
 }
 
 .landing-page-container {
@@ -13,14 +18,32 @@
   align-items: center;
 }
 
-.section-hero {
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 2em;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 4em;
+  }
+}
+
+.section-hero {
   display: flex;
   justify-content: center;
 
   img {
     width: 265px;
     height: 90px;
+
+    @include media-breakpoint-up(md) {
+      width: 400px;
+      height: 135px;
+    }
   }
 }
 
@@ -30,6 +53,11 @@
   font-weight: bold;
   color: $dark-blue;
   margin-top: 1em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+    margin-top: 0.5rem;
+  }
 }
 
 .section-intro {
@@ -40,6 +68,21 @@
   p {
     width: 16em;
     font-size: 12px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+      width: 23em;
+    }
+  }
+}
+
+.main-content-container {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3em;
   }
 }
 
@@ -50,12 +93,21 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-top: 1em;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 2em;
+    width: 50%;
+  }
 }
 
 .table-data {
   font-size: 12px;
   font-weight: bold;
   padding: 1em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
 }
 
 .td-one {
@@ -86,6 +138,15 @@
     font-size: 12px;
     text-decoration: underline;
   }
+
+  @include media-breakpoint-up(md) {
+    margin: 2em 0;
+    width: 50%;
+
+    a {
+      font-size: 18px;
+    }
+  }
 }
 
 .log-in-btn {
@@ -97,4 +158,9 @@
   font-size: 12px;
   font-weight: bold;
   margin-top: 1em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+    width: 270px;
+  }
 }
