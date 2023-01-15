@@ -32,8 +32,6 @@ export class LoginComponent implements OnInit {
 
   handleEmailError() {}
 
-  handleLogin() {}
-
   handleLoginError() {}
 
   handleLoginSuccess() {}
