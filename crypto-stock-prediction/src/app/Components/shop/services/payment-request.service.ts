@@ -25,8 +25,4 @@ export class PaymentRequestService {
       {}
     );
   }
-
-  getScoreFullPrice() {
-    return this.http.get(`${this.paymentRequestUrl}/price/score-full`, {});
-  }
 }
