@@ -11,14 +11,11 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
     this.initForm();
     this.fetchRouteParams();
-    this.getScoreFullPrice();
   }
 
   initForm() {}
 
   fetchRouteParams() {}
-
-  getScoreFullPrice() {}
 
   requestPayment() {}
 
