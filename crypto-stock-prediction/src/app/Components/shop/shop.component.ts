@@ -22,9 +22,5 @@ export class ShopComponent implements OnInit {
 
   requestPayment() {}
 
-  handlePaymentRequestError() {}
-
-  handlePaymentRequestSuccess() {}
-
   updatePrice() {}
 }
