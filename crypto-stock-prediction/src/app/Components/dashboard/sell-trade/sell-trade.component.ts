@@ -12,4 +12,12 @@ export class SellTradeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  requestTrade() {
+    
+  }
+
+  confirmTrade() {
+    
+  }
+
 }
